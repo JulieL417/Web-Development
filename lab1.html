@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="main.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="lab1.js"></script>
+</head>
+<body>
+    <div class="container">
+      <div id="header">
+        <h1>Lab #1</h1>
+        <p>WEBD480 — Professor Darby</p>
+        <div id="instructions">
+          <p>
+            <strong>Instructions:</strong>
+            </p>
+<ul>
+<li>Please answer each question using nothing but unobtrusive Javascript.</li>
+              <li>You will need to create and insert a JS file into the lab's HTML file.</li>
+              <li>Each question has a div with the class "output". Place your answer in this div.</li>
+              <li>
+                When complete, zip up the HTML, CSS, JS and submit via the appropriate
+                <a href="https://my.franklin.edu" target="_blank">MyFranklin assignment.</a>
+              </li>
+            </ul>
+<p>
+            <strong>Scoring:</strong>
+            7.5 points each (75 points total)
+          </p>
+        </div>
+      </div>
+      <fieldset id="question-1">
+<p>
+          <label>Question 1</label>
+        </p>
+        <p>How many questions are there on this page?</p>
+        <p class="output">
+        <button id="questions">Click here for answer</button>
+        </p>
+      </fieldset>
+<fieldset id="question-2">
+<p>
+          <label>Question 2</label>
+        </p>
+        <p>Make the word "Disappear" disappear after two seconds.</p>
+        <p class="target">Disappear</p>
+        <p class="output">
+        <button id="disappear">Click here to disappear</button>
+        </p>
+      </fieldset>
+<fieldset id="question-3">
+<p>
+          <label>Question 3</label>
+        </p>
+        <p>Make the word "Fade" fade after two seconds.</p>
+        <p class="target">Fade</p>
+        <p class="output">
+        <button id="fade">Click here to fade</button>
+        </p>
+      </fieldset>
+<fieldset id="question-4">
+<p>
+          <label>Question 4</label>
+        </p>
+        <p>Make the words "Franklin University" appear in the output div.</p>
+        <p class="output">
+        <button id="franklin">Click here to appear</button>      
+        </p>
+      </fieldset>
+<fieldset id="question-5">
+<p>
+          <label>Question 5</label>
+        </p>
+        <p>Find and enter this phone number into the output div: (614) 555-5755</p>
+        <p class="output">
+        <form id="form" action="/submit" method="post">
+        Please enter this phone number (614) 555-5755:
+        <input type="text" id="myPhone" name="myPhone" onkeypress="if(event.keyCode==13) {this.submit();}"/>
+        <span id="infoPhone">Required</span><br/>
+        </form>
+        </p>
+      </fieldset>
+<fieldset id="question-6">
+<p>
+          <label>Question 6</label>
+        </p>
+        <p>
+          Make the words "Clicked" appear when this
+          <a href="#">link</a>
+          is clicked. Make sure the page doesn't reload.
+        </p>
+        <p class="output"></p>
+      </fieldset>
+<fieldset id="question-7">
+<p>
+          <label>Question 7</label>
+        </p>
+        <p>
+          We need a custom event named "profileUpdated". Bind to this event and make
+          the word "Updated" appear in the output div when triggered.
+          Trigger the event when this
+          <a href="#">link</a>
+          is clicked.
+        </p>
+        <p class="output"></p>
+      </fieldset>
+<fieldset id="question-8">
+<p>
+          <label>Question 8</label>
+        </p>
+        <p>
+          The input should be submitted when the user presses the Enter button.
+          It should have the "error" class applied when the submitted text is less than five characters long.
+          Make sure to remove the "error" class if the text is five or more characters when submitted.
+        </p>
+        <p class="target">
+        <form id="myForm" action="/submit" method="post">
+        Please enter some text here:
+        <input type="text" id="myText" name="myText" onkeypress="if(event.keyCode==13) {this.submit();}"/>
+        <span id="infoText">Required</span><br/>
+        </form>
+         </p>
+      </fieldset>
+<fieldset id="question-9">
+<p>
+          <label>Question 9</label>
+        </p>
+        <p>
+          Toggle the visibility of "Toggle Me" when this
+          <a href="#">link</a>
+          is clicked.
+        </p>
+        <p class="output">
+          Toggle Me
+        </p>
+      </fieldset>
+<fieldset id="question-10">
+<p>
+          <label>Question 10</label>
+        </p>
+        <p>Show .target's data attribute "sha1"'s value in .output.</p>
+        <p class="target" data-sha1="92429d82a41e930486c6de5ebda9602d55c39986"></p>
+        <p class="output">
+        <button id="tarData">Show target's data attribute here</button></p>
+      </fieldset>
+</div>
+  </body>
+</html>
